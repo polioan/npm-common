@@ -1,0 +1,84 @@
+{
+  "name": "@polioan/common",
+  "version": "0.0.1",
+  "author": {
+    "name": "Ivan Polushin",
+    "url": "https://t.me/polioan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polioan/npm-common"
+  },
+  "homepage": "https://github.com/polioan/npm-common#readme",
+  "bugs": {
+    "url": "https://github.com/polioan/npm-common/issues"
+  },
+  "funding": "https://boosty.to/polioan",
+  "keywords": [
+    "util",
+    "polioan",
+    "snippets",
+    "helpers",
+    "common"
+  ],
+  "description": "Common utils",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup --config rollup.config.js",
+    "test:types": "tsc --noEmit",
+    "test": "npm run test:types",
+    "lint": "eslint . --ext .ts,.js,.cts,.cjs,.mjs",
+    "lint:fix": "eslint . --ext .ts,.js,.cts,.cjs,.mjs --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "publish:dryrun": "npm publish --dry-run"
+  },
+  "peerDependencies": {
+    "@types/node": "*"
+  },
+  "peerDependenciesMeta": {
+    "@types/node": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/eslint": "^8.44.4",
+    "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.51.0",
+    "eslint-config-polioan": "^1.5.0",
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-spellcheck": "^0.0.20",
+    "eslint-plugin-typescript-enum": "^2.1.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-jsdoc": "^1.1.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
