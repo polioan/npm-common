@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "sourceMap": false,
     "incremental": false,
     "skipLibCheck": true,
@@ -23,7 +23,7 @@
 
     "removeComments": false,
     "noEmit": true,
-    "declaration": true,
+    "declaration": false,
 
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
@@ -44,6 +44,6 @@
 
     "verbatimModuleSyntax": true
   },
-  "include": ["src", ".prettierrc.cjs", ".eslintrc.cjs", "rollup.config.js"],
+  "include": ["src", ".prettierrc.cjs", ".eslintrc.cjs", "rollup.config.mjs"],
   "exclude": ["node_modules"]
 }

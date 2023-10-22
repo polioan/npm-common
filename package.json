@@ -26,9 +26,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "type": "module",
   "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -42,7 +41,7 @@
   "engineStrict": true,
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "rollup --config rollup.config.js",
+    "build": "rollup --config rollup.config.mjs",
     "test:types": "tsc --noEmit",
     "test": "npm run test:types",
     "lint": "eslint . --ext .ts,.js,.cts,.cjs,.mjs",
@@ -78,6 +77,7 @@
     "prettier-plugin-jsdoc": "^1.1.1",
     "rimraf": "^5.0.5",
     "rollup": "^4.0.2",
+    "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   }
