@@ -1,6 +1,6 @@
 {
   "name": "@polioan/common",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": {
     "name": "Ivan Polushin",
     "url": "https://t.me/polioan"
@@ -43,7 +43,8 @@
     "prebuild": "rimraf dist",
     "build": "rollup --config rollup.config.mjs",
     "test:types": "tsc --noEmit",
-    "test": "npm run test:types",
+    "test:unit": "vitest --dir \"test\" --run --passWithNoTests",
+    "test": "npm run test:types && npm run test:unit",
     "lint": "eslint . --ext .ts,.js,.cts,.cjs,.mjs",
     "lint:fix": "eslint . --ext .ts,.js,.cts,.cjs,.mjs --fix",
     "format": "prettier --write .",
@@ -79,6 +80,7 @@
     "rollup": "^4.0.2",
     "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
   }
 }

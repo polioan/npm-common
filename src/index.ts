@@ -5,3 +5,4 @@ export * from './runtime/noop'
 
 export * from './types/enumof'
 export * from './types/falsy'
+export * from './types/class'

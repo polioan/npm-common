@@ -55,6 +55,12 @@ const config = {
         'spellcheck/spell-checker': ['off'],
       },
     },
+    {
+      files: ['test/*'],
+      rules: {
+        'no-console': ['warn'],
+      },
+    },
   ],
 }
 

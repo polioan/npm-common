@@ -25,6 +25,8 @@
     "noEmit": true,
     "declaration": false,
 
+    "stripInternal": true,
+
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -44,6 +46,12 @@
 
     "verbatimModuleSyntax": true
   },
-  "include": ["src", ".prettierrc.cjs", ".eslintrc.cjs", "rollup.config.mjs"],
+  "include": [
+    "src",
+    "test",
+    ".prettierrc.cjs",
+    ".eslintrc.cjs",
+    "rollup.config.mjs"
+  ],
   "exclude": ["node_modules"]
 }
