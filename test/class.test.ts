@@ -30,5 +30,6 @@ test('Class, AnyClass', () => {
   const date = create(Date, [''])
   const dog1 = create(Dog1, [])
   const dog2 = create(Dog2, ['bark'])
-  console.log({ date, dog1, dog2 })
+
+  void { date, dog1, dog2 }
 })
