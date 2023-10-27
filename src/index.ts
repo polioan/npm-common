@@ -4,6 +4,7 @@ export * from './runtime/randomChoice'
 export * from './runtime/noop'
 export * from './runtime/valueToRange'
 export * from './runtime/clamp'
+export * from './runtime/pipe'
 
 export * from './types/enumof'
 export * from './types/falsy'
