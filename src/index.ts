@@ -5,6 +5,7 @@ export * from './runtime/noop'
 export * from './runtime/valueToRange'
 export * from './runtime/clamp'
 export * from './runtime/pipe'
+export * from './runtime/coinFlip'
 
 export * from './types/enumof'
 export * from './types/falsy'
