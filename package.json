@@ -1,6 +1,6 @@
 {
   "name": "@polioan/common",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "author": {
     "name": "Ivan Polushin",
     "url": "https://t.me/polioan"
@@ -49,7 +49,8 @@
     "lint:fix": "eslint . --ext .ts,.js,.cts,.cjs,.mjs --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "publish:dryrun": "npm publish --dry-run"
+    "publish:dryrun": "npm publish --dry-run",
+    "check": "npm run build && npm run test && npm run lint && npm run format:check && npm run publish:dryrun"
   },
   "peerDependencies": {
     "@types/node": "*"
