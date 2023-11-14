@@ -7,6 +7,7 @@ export * from './runtime/clamp'
 export * from './runtime/pipe'
 export * from './runtime/randomCoinFlip'
 export * from './runtime/randomInt'
+export * from './runtime/isValidPort'
 
 export * from './types/enumof'
 export * from './types/falsy'
