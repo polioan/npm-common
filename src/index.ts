@@ -10,6 +10,7 @@ export * from './runtime/randomInt'
 export * from './runtime/isValidPort'
 export * from './runtime/identity'
 export * from './runtime/arrayify'
+export * from './runtime/assertNever'
 
 export * from './types/enumof'
 export * from './types/falsy'
