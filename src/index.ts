@@ -13,6 +13,7 @@ export * from './runtime/arrayify'
 export * from './runtime/assertNever'
 export * from './runtime/randomStr'
 export * from './runtime/isValidDate'
+export * from './runtime/shuffle'
 
 export * from './types/enumof'
 export * from './types/falsy'
