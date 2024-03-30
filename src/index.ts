@@ -14,6 +14,7 @@ export * from './runtime/assertNever'
 export * from './runtime/randomStr'
 export * from './runtime/isValidDate'
 export * from './runtime/shuffle'
+export * from './runtime/is'
 
 export * from './types/enumof'
 export * from './types/falsy'

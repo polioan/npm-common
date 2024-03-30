@@ -1,6 +1,6 @@
 {
   "name": "@polioan/common",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "author": {
     "name": "Ivan Polushin",
     "url": "https://t.me/polioan"
@@ -53,10 +53,14 @@
     "check": "npm run build && npm run test && npm run lint && npm run format:check && npm run publish:dryrun"
   },
   "peerDependencies": {
-    "@types/node": "*"
+    "@types/node": "*",
+    "zod": "*"
   },
   "peerDependenciesMeta": {
     "@types/node": {
+      "optional": true
+    },
+    "zod": {
       "optional": true
     }
   },
@@ -82,6 +86,7 @@
     "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "vitest": "^0.34.6",
+    "zod": "^3.22.4"
   }
 }
